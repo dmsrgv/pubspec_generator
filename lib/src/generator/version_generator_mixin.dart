@@ -33,7 +33,7 @@ mixin VersionGeneratorMixin on PubspecGenerator {
       '  versionCustomString: r\'${version.major}.${version.minor}.${version.patch} (${version.build.first})\',\n'
       '\n'
       '  /// Version in the pubspec.yaml file.\n'
-      '  version: r\'${version.major}.${version.minor}.${version.patch}\',\n'
+      '  buildVersion: r\'${version.major}.${version.minor}.${version.patch}\',\n'
       '\n'
       '  /// buildNumber in the pubspec.yaml file.\n'
       '  buildNumber: r\'${version.build.first}\',\n'

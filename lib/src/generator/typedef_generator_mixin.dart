@@ -13,7 +13,7 @@ mixin TypedefGeneratorMixin on PubspecGenerator {
       ..writeln('  String representation,')
       ..writeln('  String canonical,')
       ..writeln('  String versionCustomString,')
-      ..writeln('  String version,')
+      ..writeln('  String buildVersion,')
       ..writeln('  String buildNumber,')
       ..writeln('  int major,')
       ..writeln('  int minor,')
