@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_escaping_inner_quotes, avoid_annotating_with_dynamic
+// ignore_for_file: avoid_escaping_inner_quotes, avoid_annotating_with_dynamic, lines_longer_than_80_chars
 // ignore_for_file: unnecessary_raw_strings
 
 import 'package:pub_semver/pub_semver.dart' as ver;
@@ -28,6 +28,15 @@ mixin VersionGeneratorMixin on PubspecGenerator {
       '  /// Non-canonical string representation of the version as provided\n'
       '  /// in the pubspec.yaml file.\n'
       '  representation: r\'${raw ?? ''}\',\n'
+      '\n'
+      '  /// Version custom string representation in the pubspec.yaml file.\n'
+      '  versionCustomString: r\'${version.major}.${version.minor}.${version.patch} (${version.build.first})\',\n'
+      '\n'
+      '  /// Version in the pubspec.yaml file.\n'
+      '  version: r\'${version.major}.${version.minor}.${version.patch}\',\n'
+      '\n'
+      '  /// buildNumber in the pubspec.yaml file.\n'
+      '  buildNumber: r\'${version.build.first}\',\n'
       '\n'
       '  /// Returns a \'canonicalized\' representation\n'
       '  /// of the application version.\n'
